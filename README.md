@@ -1,29 +1,29 @@
-# Speech Recognition — [Model/Approach Name]
+# Speech Recognition with OpenAI Whisper
 
-A speech-recognition system that transcribes spoken English audio into text,
-built as a team project for the Speech Recognition course at Newgiza University.
-The system was tested across short, long, and noisy inputs to evaluate accuracy
-and robustness.
+A speech-recognition system that transcribes spoken English audio into text using
+**OpenAI Whisper**, built as a team project for the Speech Recognition course at
+Newgiza University. The system was tested across short, long, and noisy inputs to
+evaluate transcription accuracy and robustness under different conditions.
+
+> **Team project (Team 2).**
 
 ## Overview
-"Converts speech to text using [Whisper / wav2vec2 / an HMM-GMM pipeline / MFCC
-features + a classifier]."]
+The project uses OpenAI's Whisper model to convert speech to text. Rather than
+building an acoustic model from scratch, it leverages Whisper's pretrained
+transformer-based architecture and evaluates how well it performs across varied
+real-world audio conditions — clean short clips, longer continuous speech, and
+audio with background noise.
 
 ## Features
-- Transcribes spoken English audio to text
+- Transcribes spoken English audio to text using Whisper
 - Tested on **short**, **long**, and **noisy** inputs to measure robustness
-- [any other feature — language support, real-time, confidence scoring, etc.]
+- Compares transcription quality across the three input scenarios
 
 ## Approach
-[Fill in the pipeline. For example:
-- **Preprocessing:** audio loading, resampling, [MFCC / spectrogram] feature extraction
-- **Model:** [pretrained Whisper / wav2vec2 / custom model]
-- **Evaluation:** [WER — word error rate — across the three input types]]
-
-## Results
-[If you measured WER or accuracy, put it here — e.g. a small table of
-WER on short vs. long vs. noisy audio. Recruiters love seeing the noisy case,
-since it shows you tested the hard scenario.]
+- **Input:** English audio samples (short, long, and noisy test cases)
+- **Model:** OpenAI Whisper (pretrained speech-to-text transformer)
+- **Evaluation:** transcription output compared across the three input types to
+  observe how length and noise affect accuracy
 
 ## Repository contents
 - `Team2_SpeechRecognition_Implementation.ipynb` — full implementation notebook
@@ -32,13 +32,14 @@ since it shows you tested the hard scenario.]
   — sample test inputs
 
 ## Tech stack
-`Python` · `Jupyter Notebook` · [`your libraries — e.g. transformers, librosa,
-torchaudio, SpeechRecognition`]
+`Python` · `OpenAI Whisper` · `Jupyter Notebook`
 
 ## Running it
 ```bash
 git clone https://github.com/zeina-abdelaziz/speech_recognition.git
 cd speech_recognition
-# open Team2_SpeechRecognition_Implementation.ipynb in Jupyter
+
+pip install openai-whisper
+
+# open Team2_SpeechRecognition_Implementation.ipynb in Jupyter and run the cells
 ```
-[Add: pip install [libraries] if there are dependencies]
