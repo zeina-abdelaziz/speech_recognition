@@ -5,12 +5,7 @@ built as a team project for the Speech Recognition course at Newgiza University.
 The system was tested across short, long, and noisy inputs to evaluate accuracy
 and robustness.
 
-> **Team project (Team 2).** My contribution: [describe what you personally
-> built — e.g. preprocessing, model integration, evaluation, the noisy-input
-> testing, etc.]
-
 ## Overview
-[1–2 sentences: what problem it solves and the high-level approach. e.g.
 "Converts speech to text using [Whisper / wav2vec2 / an HMM-GMM pipeline / MFCC
 features + a classifier]."]
 
